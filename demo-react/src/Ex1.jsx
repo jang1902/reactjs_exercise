@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 const employeeCodes = ['NV001', 'NV002', 'NV003', 'NV004', 'NV005', 'NV006', 'NV007', 'NV008', 'NV009', 'NV010'];
 
-function App() {
+function Ex1() {
   let [newCode, setNewCode] = useState('');
   let [message, setMessage] = useState('');
 
@@ -40,8 +40,8 @@ function App() {
         <button type="submit">Thêm mã nhân viên</button>
       </form>
       <p>{message}</p>
-      <p>{employeeCodes.join(',')}</p>
+      <p>{employeeCodes.join(', ')}</p>
     </div>
   );
 }
-export default App
+export default Ex1
